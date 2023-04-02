@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Single Responsibility Principle (SRP)
  */
-public class Journal {
+class Journal {
     private final List<String> entries = new ArrayList<>();
     private static int count = 0;
 
@@ -55,7 +55,7 @@ class Persistence {
     public Journal load(URL url) { return null; }
 }
 
-class SRPRunner {
+public class SRP {
     public static void main(String[] args) throws Exception {
         Journal journal = new Journal();
         journal.addEntry("I cried today");

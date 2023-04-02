@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 /**
  * Open-closed Principle (OCP)
  */
-public class Product {
+class Product {
     public String name;
     public Color color;
     public Size size;
@@ -111,7 +111,7 @@ class AndSpecification<T> implements Specification<T> {
     }
 }
 
-class OCPRunner {
+public class OCP {
     public static void main(String[] args) {
         Product apple = new Product("Apple", Color.GREEN, Size.SMALL);
         Product tree = new Product("Tree", Color.GREEN, Size.LARGE);
