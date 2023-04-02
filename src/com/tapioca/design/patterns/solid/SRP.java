@@ -1,4 +1,4 @@
-package com.tapioca.design.patterns;
+package com.tapioca.design.patterns.solid;
 
 import java.io.File;
 import java.io.FileNotFoundException;
