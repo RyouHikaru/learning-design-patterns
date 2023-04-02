@@ -1,5 +1,7 @@
 package com.tapioca.design.patterns.solid;
 
+import org.javatuples.Triplet;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -16,31 +18,6 @@ class Person {
 
     public Person(String name) {
         this.name = name;
-    }
-}
-
-class Triplet<T, U, V> {
-
-    private final T first;
-    private final U second;
-    private final V third;
-
-    public Triplet(T first, U second, V third) {
-        this.first = first;
-        this.second = second;
-        this.third = third;
-    }
-
-    public T getFirst() {
-        return first;
-    }
-
-    public U getSecond() {
-        return second;
-    }
-
-    public V getThird() {
-        return third;
     }
 }
 
@@ -89,8 +66,8 @@ class Relationships implements RelationshipBrowser {
     @Override
     public List<Person> findAllChildrenOf(String name) {
         return relations.stream()
-                .filter(x -> x.getFirst().name.equals("John") && x.getSecond() == Relationship.PARENT)
-                .map(Triplet::getThird)
+                .filter(x -> x.getValue0().name.equals("John") && x.getValue1() == Relationship.PARENT)
+                .map(Triplet::getValue2)
                 .collect(Collectors.toList());
     }
 }
