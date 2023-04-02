@@ -55,7 +55,7 @@ class Persistence {
     public Journal load(URL url) { return null; }
 }
 
-class Runner {
+class SRPRunner {
     public static void main(String[] args) throws Exception {
         Journal journal = new Journal();
         journal.addEntry("I cried today");
