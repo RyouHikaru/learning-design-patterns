@@ -1,10 +1,10 @@
-package com.tapioca.design.patterns.adapter.vector;
+package com.tapioca.design.patterns.adapter;
 
 import java.util.*;
 import java.util.function.Consumer;
 
 /**
- * Vector/Raster
+ * Vector/Raster Implementation
  */
 class Point {
     public int x, y;
