@@ -1,4 +1,4 @@
-package com.tapioca.design.patterns.decorator.staticdecorator;
+package com.tapioca.design.patterns.decorator.statik;
 
 import java.util.function.Supplier;
 
